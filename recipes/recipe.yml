@@ -24,8 +24,9 @@ modules:
     repos:
       copr:
         - atim/starship
-    # install:
-    #   packages:
+    install:
+      packages:
+        - code
     group-install:
       with-optional: true
       packages:
