@@ -23,7 +23,6 @@ modules:
         - atim/starship
     install:
       packages:
-        - 
     group-install:
       with-optional: true
       packages:
