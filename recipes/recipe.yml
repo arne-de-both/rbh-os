@@ -24,9 +24,9 @@ modules:
     install:
       packages:
         - code
-    group-remove:
-      packages:
-        - kde-desktop
+    # group-remove:
+    #   packages:
+    #     - kde-desktop
     group-install:
       with-optional: true
       packages:
