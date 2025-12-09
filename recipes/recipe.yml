@@ -21,9 +21,9 @@ modules:
     repos:
       copr:
         - atim/starship
-    install:
-      packages:
-        - code
+    # install:
+    #   packages:
+    #     - code
     # group-remove:
     #   packages:
     #     - kde-desktop
