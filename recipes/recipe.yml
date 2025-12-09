@@ -14,7 +14,11 @@ image-version: 43 # latest is also supported if you want new updates ASAP
 modules:
   - type: akmods
     base: main # if not specified, classic "main" base is used by default
+    install:
+      - common
+      - nvidia
     nvidia-driver: nvidia
+  
   - type: files
     files:
       - source: system
