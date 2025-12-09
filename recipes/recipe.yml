@@ -6,17 +6,12 @@ name: rbh-os
 description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/base-main
-image-version: 43 # latest is also supported if you want new updates ASAP
+base-image: ghcr.io/ublue-os/bazzite-nvidia
+image-version: stable # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
-  - type: akmods
-    install:
-      - v4l2loopback
-    nvidia-driver: nvidia
-  
   - type: files
     files:
       - source: system
@@ -29,6 +24,9 @@ modules:
     install:
       packages:
         - code
+    group-remove:
+      packages:
+        - kde-desktop
     group-install:
       with-optional: true
       packages:
