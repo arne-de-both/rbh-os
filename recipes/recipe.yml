@@ -27,6 +27,7 @@ modules:
     group-remove:
       packages:
         - plasma-desktop
+        - sddm
     group-install:
       with-optional: true
       packages:
