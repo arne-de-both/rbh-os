@@ -24,11 +24,20 @@ modules:
     install:
       packages:
         - zsh
+        - konsole 
+        - dolphin
+        - kate
+        - plasma-workspace 
+        - sddm
     group-install:
       with-optional: true
       packages:
         - cosmic-desktop
         - cosmic-desktop-apps
+    group-remove:
+      packages:
+        - kde-applications
+        - sddm
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
