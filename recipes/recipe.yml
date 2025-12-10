@@ -24,11 +24,6 @@ modules:
     install:
       packages:
         - zsh
-        - konsole 
-        - dolphin
-        - kate
-        - plasma-workspace 
-        - sddm
     group-install:
       with-optional: true
       packages:
@@ -45,6 +40,10 @@ modules:
         - firefox
         - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
         - plasma-desktop
+        - konsole 
+        - dolphin
+        - kate
+        - plasma-workspace 
         - sddm
 
   - type: default-flatpaks
