@@ -24,10 +24,6 @@ modules:
     # install:
     #   packages:
     #     - code
-    group-remove:
-      packages:
-        - plasma-desktop
-        - sddm
     group-install:
       with-optional: true
       packages:
@@ -39,6 +35,8 @@ modules:
         # "firefox" is the main package, "firefox-langpacks" is a dependency
         - firefox
         - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+        - plasma-desktop
+        - sddm
 
   - type: default-flatpaks
     configurations:
